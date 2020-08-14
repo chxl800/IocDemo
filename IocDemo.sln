@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dao", "Dao\Dao.csproj", "{A589CB8E-2F5C-45DB-A88F-B62EA5A01122}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{FD7997AA-17E1-4E19-AADF-04E7E056BEED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A589CB8E-2F5C-45DB-A88F-B62EA5A01122} = {A589CB8E-2F5C-45DB-A88F-B62EA5A01122}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IocApi", "IocApi\IocApi.csproj", "{6AC6938F-0730-45B6-8590-2F10693A17DF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A589CB8E-2F5C-45DB-A88F-B62EA5A01122} = {A589CB8E-2F5C-45DB-A88F-B62EA5A01122}
+		{FD7997AA-17E1-4E19-AADF-04E7E056BEED} = {FD7997AA-17E1-4E19-AADF-04E7E056BEED}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IocWeb", "IocWeb\IocWeb.csproj", "{F36E8E4D-3436-4E51-8B95-F080B344A638}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A589CB8E-2F5C-45DB-A88F-B62EA5A01122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A589CB8E-2F5C-45DB-A88F-B62EA5A01122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A589CB8E-2F5C-45DB-A88F-B62EA5A01122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A589CB8E-2F5C-45DB-A88F-B62EA5A01122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7997AA-17E1-4E19-AADF-04E7E056BEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7997AA-17E1-4E19-AADF-04E7E056BEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7997AA-17E1-4E19-AADF-04E7E056BEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7997AA-17E1-4E19-AADF-04E7E056BEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC6938F-0730-45B6-8590-2F10693A17DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC6938F-0730-45B6-8590-2F10693A17DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC6938F-0730-45B6-8590-2F10693A17DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC6938F-0730-45B6-8590-2F10693A17DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F36E8E4D-3436-4E51-8B95-F080B344A638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36E8E4D-3436-4E51-8B95-F080B344A638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36E8E4D-3436-4E51-8B95-F080B344A638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36E8E4D-3436-4E51-8B95-F080B344A638}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {254F63DF-EC51-4257-A5DB-037FA23C284B}
+	EndGlobalSection
+EndGlobal
